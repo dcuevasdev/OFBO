@@ -216,9 +216,15 @@ body {
   border: 2px solid #2e8a99;
   border-radius: 0.8rem;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
   font: 1.4rem;
+}
+.institute {
+  width: 100%;
+  color: #0e2954;
+  font-weight: bold;
 }
 
 /*=== Footer ===*/
