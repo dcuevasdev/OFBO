@@ -1,0 +1,271 @@
+/*===Global Styles===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*=== Header ===*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.8rem;
+}
+.header__logo img {
+  width: 40%;
+}
+.header__nav {
+  width: 50%;
+}
+.header__nav-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav__element a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000;
+}
+.nav__element a:hover {
+  color: #0e2954;
+  text-decoration: underline;
+}
+
+/*=== Hero ===*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.8rem;
+}
+.hero__profile {
+  width: 40rem;
+}
+.hero__profile img {
+  display: block;
+  width: 70%;
+  border-radius: 30rem;
+  margin: 0 auto;
+}
+.hero__info {
+  width: 60%;
+}
+.hero__info-title {
+  font-size: 4.8rem;
+  color: #0e2954;
+}
+.hero__info-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.hero__info-description {
+  font-size: 1.4rem;
+}
+
+/*=== Skills ===*/
+.skills {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+.skills__title {
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills__soft {
+  width: 16rem;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+}
+.skills__container .two,
+.skills__container .four,
+.skills__container .five,
+.skills__container .six,
+.skills__container .seven,
+.skills__container .eight,
+.skills__container .ten {
+  line-height: 4.2rem;
+}
+.skills__container .one,
+.skills__container .eight,
+.skills__container .four {
+  border: 2px solid #1f6e8c;
+}
+.skills__container .two,
+.skills__container .nine,
+.skills__container .six,
+.skills__container .five {
+  border: 2px solid #2e8a99;
+}
+.skills__container .three,
+.skills__container .ten,
+.skills__container .seven {
+  border: 2px solid #84a7a1;
+}
+
+/*=== Experiencia ===*/
+.experience {
+  margin-top: 2.8rem;
+  text-align: center;
+}
+.experience__title {
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.experience__container {
+  width: 100%;
+  margin-bottom: 1.8rem;
+  padding: 3.6rem;
+  text-align: left;
+  border: 2px solid #2e8a99;
+  border-radius: 0.8rem;
+  /*box-shadow: -1rem -1rem 10px #1f6e8c;*/
+}
+.experience__container-job {
+  font-size: 2rem;
+  color: #0e2954;
+}
+.experience__container-company {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.experience__container-time {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.experience__container-description {
+  font-size: 1.2rem;
+}
+
+/*=== Studies ===*/
+.studies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+  text-align: center;
+}
+.studies__title {
+  width: 100%;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.studies__section {
+  width: 50%;
+}
+
+.studies__subtitle {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+.studies__container {
+  margin-bottom: 1.2rem;
+  padding: 1.8rem;
+  width: 90%;
+  text-align: left;
+  border: 2px solid #2e8a99;
+  border-radius: 0.8rem;
+}
+.studies__container-title {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  color: #0e2954;
+}
+.studies__container-collage {
+  font-size: 1.2rem;
+}
+.studies__container-description {
+  font-size: 1rem;
+}
+.studies__complementary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.studies__containerComplementary {
+  width: 48%;
+  margin-bottom: 1.2rem;
+  padding: 1.8rem;
+  text-align: left;
+  border: 2px solid #2e8a99;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1.4rem;
+}
+
+/*=== Footer ===*/
+.footer {
+  margin: 4.8rem 0 2rem;
+  text-align: center;
+}
+.footer__callToAction {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+.footer__img {
+  width: 30px;
+}
+
+/*=== Mobile ===*/
+@media only screen and (max-width: 750px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header__nav {
+    width: 100%;
+    margin-top: 1.8rem;
+  }
+  .header__logo {
+    text-align: center;
+  }
+  .header__logo img {
+    width: 60%;
+  }
+  .hero__profile {
+    display: none;
+  }
+  .hero__info {
+    width: 100%;
+  }
+  .skills__container {
+    justify-content: center;
+  }
+  .studies {
+    display: block;
+  }
+  .studies__section {
+    width: 100%;
+  }
+  .studies__container {
+    width: 100%;
+  }
+}
